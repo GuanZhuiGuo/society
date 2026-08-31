@@ -8,6 +8,10 @@
 archive/
 └── YYYY/
     └── YYYY-MM.md
+coverage.csv          # 1995-01 至今的逐月覆盖状态
+ENTRY_TEMPLATE.md     # 月档案固定格式
+CONTRIBUTING.md        # 收录、核验与修订规范
+scripts/              # 结构与链接校验工具
 ```
 
 每个月原则上收录 3–5 个具有长期记录价值的事件。没有足够可靠材料时，宁可少收，也不以未经核实的信息补齐数量。
@@ -32,6 +36,25 @@ archive/
 ## 覆盖进度
 
 档案正在从 1995 年开始按月回填，并持续更新到当前月份。月末任务负责追加当月条目；历史回填采用分批核验、分批提交的方式推进。
+
+截至 2026-08-31：
+
+- 计划范围：1995-01 至 2026-08，共 380 个月；
+- 已建立 13 个月文件，收录并核验 30 条事件；
+- 已完成 1995-01 至 1995-03、1996-01 至 1996-03 和 2026-08；
+- 另有 6 个历史种子月份各完成 1 条，仍待扩充至原则上的 3–5 条。
+
+逐月状态见 [coverage.csv](coverage.csv)。参与补录前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)，并以 [ENTRY_TEMPLATE.md](ENTRY_TEMPLATE.md) 为格式基准。
+
+## 本地校验
+
+```bash
+python3 -m unittest discover -s tests
+python3 scripts/validate_archive.py --root .
+python3 scripts/check_links.py --root .
+```
+
+默认结构校验会把少于 3 条或多于 5 条的月份标为警告；这类月份允许暂存已核验种子，但必须在月文件和 `coverage.csv` 中说明原因。
 
 ## 免责声明
 
