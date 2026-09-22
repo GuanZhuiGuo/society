@@ -344,7 +344,7 @@ month,status,event_count,verified_count,notes
 2023-07,pending,0,0,
 2023-08,pending,0,0,
 2023-09,pending,0,0,
-2023-10,pending,0,0,
+2023-10,draft,1,0,专项补录武大图书馆事件1条；不足3条因全月查漏未完成；后续并入原事件；证据截止2026-09-22；待人工复核
 2023-11,verified,1,1,现有历史种子已迁移并核验；项目按延期风险而非已确认烂尾表述
 2023-12,pending,0,0,
 2024-01,pending,0,0,
@@ -367,7 +367,7 @@ month,status,event_count,verified_count,notes
 2025-06,pending,0,0,
 2025-07,pending,0,0,
 2025-08,pending,0,0,
-2025-09,pending,0,0,
+2025-09,draft,1,0,专项补录罗永浩与西贝争议1条；不足3条因全月查漏未完成；证据截止2026-09-22；待人工复核
 2025-10,pending,0,0,
 2025-11,pending,0,0,
 2025-12,pending,0,0,
@@ -378,4 +378,4 @@ month,status,event_count,verified_count,notes
 2026-05,pending,0,0,
 2026-06,pending,0,0,
 2026-07,pending,0,0,
-2026-08,verified,5,5,原会话5条候选均已迁移并核验；证据截止2026-08-31
+2026-08,in_review,6,5,原5条保留核验状态及2026-08-31证据截止；专项追加电梯纠纷故超5条；新增1条证据截止2026-09-22待人工复核
